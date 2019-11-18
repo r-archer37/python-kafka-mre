@@ -1,6 +1,7 @@
 ### Reproducing the connection failure between Python 3.7 and Kafka with SSL encryption
 
 To reproduce the problem, follow these steps in a local terminal:
+
 0. Optionally, pull the required Docker images before starting (takes a few minutes):
 	- `docker pull jupyter/tensorflow-notebook:be289da10d60`
 	- `docker pull jupyter/tensorflow-notebook:4d7dd95017ed`
