@@ -7,7 +7,7 @@ To reproduce the problem, follow these steps in a local terminal:
 	- `docker pull jupyter/tensorflow-notebook:4d7dd95017ed`
 	- `docker pull confluentinc/cp-kafka:5.3.1`
 	- `docker pull confluentinc/cp-zookeeper:5.0.0`
-1. `pwd path/to/repo/python-kafka-mre/` (further commands need to be run from this directory!)
+1. `cd path/to/repo/python-kafka-mre/` (further commands need to be run from this directory!)
 2. `docker-compose -f mre-docker-compose36.yml up --abort-on-container-exit`
 3. Wait 30 seconds; note that the python container prints the python and openssl versions it is using then successfully connects to Kafka (`DEBUG:pykafka.connection:Successfully connected to b'kafka':9092`), and exits with code 0
 4. `docker-compose -f mre-docker-compose36.yml down`
